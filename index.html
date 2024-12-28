@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Lopez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/header-logo.svg" alt="Logo">
+        <h1 class="title">Mi Página Verde</h1>
+    </header>
+    <nav>
+        <a href="#" class="nav-link" onclick="changeContent('images/image1.jpg', 'Texto para Opción 1')">Opción 1</a>
+        <a href="#" class="nav-link" onclick="changeContent('images/image2.jpg', 'Texto para Opción 2')">Opción 2</a>
+        <a href="#" class="nav-link" onclick="changeContent('images/image3.jpg', 'Texto para Opción 3')">Opción 3</a>
+        <a href="#" class="nav-link" onclick="changeContent('images/image4.jpg', 'Texto para Opción 2')">Opción 2</a>
+        <a href="#" class="nav-link" onclick="changeContent('images/image5.jpg', 'Texto para Opción 3')">Opción 3</a>
+        <a href="#" class="nav-link" onclick="changeContent('images/image6.jpg', 'Texto para Opción 2')">Opción 2</a>
+        <a href="#" class="nav-link" onclick="changeContent('images/image7.jpg', 'Texto para Opción 3')">Opción 3</a>
+    </nav>
+    <main class="main-content">
+        <section class="text-section">
+            <h2>Bienvenido</h2>
+            <p>Esta es una página de ejemplo con colores complementarios. Selecciona una opción del menú para cambiar la imagen.</p>
+        </section>
+        <section class="target-image">
+            <img id="target" src="images/image1.jpg" alt="Imagen inicial">
+        </section>
+    </main>
+    <script>
+        function changeContent(imageSrc, textContent) {
+            document.getElementById('target').src = imageSrc;
+            document.getElementById('target-text').textContent = textContent;
+        }
+    </script>
+</body>
+</html>
