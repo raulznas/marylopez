@@ -92,12 +92,6 @@ nav a:hover, nav a.active {
     border-radius: 5px;
 }
 
-.target-text {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #333;
-}
-
 .footer {
     background-color: #166536;
     color: white;
