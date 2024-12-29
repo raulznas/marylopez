@@ -68,26 +68,32 @@ nav a:hover, nav a.active {
 
 .main-content {
     display: flex;
-    padding: 2rem;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
 .text-section {
-    flex: 2;
-    font-size: 1rem;
+    flex: 1 1 50%;
+    min-width: 300px;
 }
 
-.target-image {
-    flex: 1;
+.target-container {
+    flex: 1 1 50%;
+    min-width: 300px;
     text-align: center;
 }
 
 .target-image img {
-    width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     border: 2px solid #166536;
     border-radius: 5px;
+}
+
+.target-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
 }
 
 .footer {
