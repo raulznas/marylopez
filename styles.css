@@ -73,7 +73,7 @@ nav a:hover, nav a.active {
 }
 
 .text-section {
-    flex: 1 1 90%;
+    flex: 1 1 50%;
     min-width: 300px;
     max-width: 600px;
     text-align: justify;
@@ -86,6 +86,7 @@ nav a:hover, nav a.active {
 }
 
 .target-image img {
+    max-width: 100%;
     height: auto;
     border: 2px solid #166536;
     border-radius: 5px;
